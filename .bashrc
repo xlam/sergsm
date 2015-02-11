@@ -60,9 +60,9 @@ if ${use_color} ; then
 	fi
 
 	if [[ ${EUID} == 0 ]] ; then
-		PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W \$\[\033[00m\] '
+		PS1='\[\033[01;31m\]\h\[\033[01;34m\] \W$(__git_ps1)\n\$\[\033[00m\] '
 	else
-		PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w $(__git_ps1)\$\[\033[00m\] '
+		PS1='\[\033[01;32m\]\u@\h\[\033[01;34m\] \w$(__git_ps1)\n\$\[\033[00m\] '
 	fi
 
 	alias ls='ls --color=auto'
@@ -70,9 +70,9 @@ if ${use_color} ; then
 else
 	if [[ ${EUID} == 0 ]] ; then
 		# show root@ when we don't have colors
-		PS1='\u@\h \W \$ '
+		PS1='\u@\h \W$(__git_ps1)\n\$ '
 	else
-		PS1='\u@\h \w \$ '
+		PS1='\u@\h \w$(__git_ps1)\n\$ '
 	fi
 fi
 
