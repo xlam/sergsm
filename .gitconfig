@@ -1,3 +1,5 @@
 [user]
 	email = xlamserg@gmail.com
 	name = sergsm
+[alias]
+	logg = log --oneline --decorate --graph
