@@ -3,3 +3,5 @@
 	name = sergsm
 [alias]
 	logg = log --oneline --decorate --graph
+[push]
+	default = simple
