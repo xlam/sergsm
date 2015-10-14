@@ -17,7 +17,7 @@ format_human_readable
 # - Text settings - #
 #####################
 use_xft yes
-xftfont Liberation Sans:size=8
+xftfont Ubuntu:size=8
 override_utf8_locale yes
 text_buffer_size 2048
 
@@ -43,13 +43,13 @@ default_bar_size 60 8
 #########################
 # - Graphics settings - #
 #########################
-draw_shades no
+draw_shades yes
 
 default_color cccccc
 
-color0 white
+color0 grey
 color1 3465A4
-color2 white
+color2 grey
 color3 204A87
 
 TEXT
@@ -108,13 +108,13 @@ ${voffset 2}${color0}${font ConkyColors:size=15}t${font}${color}${goto 32}${voff
 ${goto 32}Всего: ${font Liberation Sans:style=Bold:size=8}${color2}${totaldown wlan0}${color}${font}
 ${color0}${font ConkyColors:size=15}j${font}${color}${voffset -6}${goto 32}Сигнал: ${font Liberation Sans:style=Bold:size=8}${color1}${wireless_link_qual_perc wlan0}%${color}${font} ${alignr}${color2}${wireless_link_bar 8,60 wlan0}${color}
 ${voffset 2}${color0}${font ConkyColors:size=15}B${font}${color}${goto 32}${voffset -6}Локальный IP: ${alignr}${color2}${addr wlan0}${color}
-# |--ETH0
-${else}${if_up eth0}
-${voffset -5}${color0}${font ConkyColors:size=15}s${font}${color}${goto 32}${voffset -12}Отправка: ${font Liberation Sans:style=Bold:size=8}${color1}${upspeed eth0}${color}${font} ${alignr}${color2}${upspeedgraph eth0 8,60 3465A4 204A87}${color}
-${goto 32}Всего: ${font Liberation Sans:style=Bold:size=8}${color2}${totalup eth0}${color}${font}
-${voffset 4}${color0}${font ConkyColors:size=15}t${font}${color}${goto 32}${voffset -12}Приём: ${font Liberation Sans:style=Bold:size=8}${color1}${downspeed eth0}${color}${font} ${alignr}${color2}${downspeedgraph eth0 8,60 3465A4 204A87}${color}
-${goto 32}Всего: ${font Liberation Sans:style=Bold:size=8}${color2}${totaldown eth0}${color}${font}
-${voffset 2}${color0}${font ConkyColors:size=15}B${font}${color}${goto 32}${voffset -6}Локальный IP: ${alignr}${color2}${addr eth0}${color}
+# |--enp3s0
+${else}${if_up enp3s0}
+${voffset -5}${color0}${font ConkyColors:size=15}s${font}${color}${goto 32}${voffset -12}Отправка: ${font Liberation Sans:style=Bold:size=8}${color1}${upspeed enp3s0}${color}${font} ${alignr}${color2}${upspeedgraph enp3s0 8,60 3465A4 204A87}${color}
+${goto 32}Всего: ${font Liberation Sans:style=Bold:size=8}${color2}${totalup enp3s0}${color}${font}
+${voffset 4}${color0}${font ConkyColors:size=15}t${font}${color}${goto 32}${voffset -12}Приём: ${font Liberation Sans:style=Bold:size=8}${color1}${downspeed enp3s0}${color}${font} ${alignr}${color2}${downspeedgraph enp3s0 8,60 3465A4 204A87}${color}
+${goto 32}Всего: ${font Liberation Sans:style=Bold:size=8}${color2}${totaldown enp3s0}${color}${font}
+${voffset 2}${color0}${font ConkyColors:size=15}B${font}${color}${goto 32}${voffset -6}Локальный IP: ${alignr}${color2}${addr enp3s0}${color}
 # |--ENP4S0
 ${else}${if_up enp4s0}
 ${voffset -5}${color0}${font ConkyColors:size=15}s${font}${color}${goto 32}${voffset -12}Отправка: ${font Liberation Sans:style=Bold:size=8}${color1}${upspeed enp4s0}${color}${font} ${alignr}${color2}${upspeedgraph enp4s0 8,60 3465A4 204A87}${color}
