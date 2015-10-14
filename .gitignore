@@ -1,0 +1,6 @@
+/*
+!.bashrc
+!.gitignore
+!/.conkycolors
+/.conkycolors/*
+!/.conkycolors/conkyrc
