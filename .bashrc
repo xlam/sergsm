@@ -91,8 +91,7 @@ source /usr/share/git/completion/git-prompt.sh
 fi
 
 alias mntd='sudo mount /dev/sdb6'
-alias mnts='sudo mount /dev/sda6'
-alias mntl='sudo mount /dev/sda5'
-alias mntx='sudo mount /dev/sda7'
+alias mnts='sudo mount /dev/sda5'
+alias mntx='sudo mount /dev/sda6'
 
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
