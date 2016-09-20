@@ -1,7 +1,9 @@
 [user]
 	email = xlamserg@gmail.com
-	name = sergsm
+	name = Sergey Sokolov
 [alias]
 	logg = log --oneline --decorate --graph
 [push]
 	default = simple
+[core]
+	editor = vim
