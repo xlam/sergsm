@@ -95,3 +95,4 @@ alias mnts='sudo mount /dev/sda5'
 alias mntx='sudo mount /dev/sda6'
 
 alias wanip='dig +short myip.opendns.com @resolver1.opendns.com'
+alias composer="php -d allow_url_fopen=On /usr/local/bin/composer"
