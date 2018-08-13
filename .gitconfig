@@ -3,8 +3,11 @@
 	name = Sergey Sokolov
 [alias]
 	logg = log --oneline --decorate --graph
+	st = status
 [push]
 	default = simple
 [core]
 	editor = vim
 	excludesfile = ~/.gitexcludes
+[merge]
+	tool = diffuse
