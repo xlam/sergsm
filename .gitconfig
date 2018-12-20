@@ -2,10 +2,16 @@
 	email = xlamserg@gmail.com
 	name = Sergey Sokolov
 [alias]
-	logg = log --oneline --decorate --graph
+	logg = log --oneline --decorate --graph --all
 	st = status
+	co = checkout
+	cob = checkout -b
+	cot = checkout --track
+	d = diff
+	l = log --oneline --decorate --graph --all -25
 [push]
 	default = simple
+	followTags = true
 [core]
 	editor = vim
 	excludesfile = ~/.gitexcludes
